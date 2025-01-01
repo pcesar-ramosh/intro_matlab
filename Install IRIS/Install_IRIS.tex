@@ -1,0 +1,164 @@
+% This LaTeX was auto-generated from MATLAB code.
+% To make changes, update the MATLAB code and export to LaTeX again.
+
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{epstopdf}
+\usepackage[table]{xcolor}
+\usepackage{matlab}
+
+\sloppy
+\epstopdfsetup{outdir=./}
+\graphicspath{ {./Install_IRIS_images/} }
+
+\begin{document}
+
+\matlabtitle{\textbf{IRIS macroeconomic modeling and forecasting toolbox}}
+
+\begin{par}
+\begin{flushleft}
+\texttt{\textbf{By Cesar Ramos}}
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{center}
+\includegraphics[width=\maxwidth{40.14049172102359em}]{image_0}
+\end{center}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+The IRIS Toolbox is a free, open-source suite of tools for macroeconomic modeling and forecasting in MATLAB, developed by the IRIS Solutions Team since 2001. 
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+ It provides a user-friendly, command-oriented environment that integrates core modeling functions—such as a flexible model file language, tools for simulation, estimation, forecasting, and model diagnostics—with supporting infrastructure for data management, time series analysis, and reporting. (\href{https://iris.igpmn.org/?utm_source=chatgpt.com}{Iris})
+\end{flushleft}
+\end{par}
+
+\matlabheading{\textbf{Advantages of the IRIS Toolbox:}}
+
+\begin{itemize}
+\setlength{\itemsep}{-1ex}
+   \item{\begin{flushleft} \textbf{Comprehensive Modeling Environment:} IRIS supports the entire workflow of macroeconomic modeling, from theoretical development to practical implementation. \end{flushleft}}
+   \item{\begin{flushleft} \textbf{Integration with MATLAB:} Seamlessly integrates with MATLAB, leveraging its computational capabilities and user-friendly interface. \end{flushleft}}
+   \item{\begin{flushleft} \textbf{Open Source and Free:} IRIS is open-source, allowing users to inspect, modify, and enhance its functionalities without licensing costs. \end{flushleft}}
+   \item{\begin{flushleft} \textbf{Extensive Documentation:} Comes with detailed documentation and tutorials to assist users in effectively utilizing its features. \end{flushleft}}
+\end{itemize}
+
+\matlabheading{\textbf{Installation Instructions:}}
+
+\matlabheadingtwo{\textbf{Software Requirements:}}
+
+\begin{itemize}
+\setlength{\itemsep}{-1ex}
+   \item{\begin{flushleft} MATLAB R2018a or newer is required for the stable branch of IRIS. The bleeding-edge branch requires MATLAB R2019b or later. For structural model estimation functions, the Optimization Toolbox is also needed. \href{https://iris-solutions-team.github.io/iris-reference/%2Biris/install.html?utm_source=chatgpt.com}{Iris Solutions Team} \end{flushleft}}
+\end{itemize}
+
+\matlabheadingtwo{\textbf{Download IRIS Toolbox:}}
+
+\begin{itemize}
+\setlength{\itemsep}{-1ex}
+   \item{\begin{flushleft} Clone the repository using Git: \end{flushleft}}
+   \item{\begin{flushleft} For the stable branch: \end{flushleft}}
+\end{itemize}
+
+\begin{verbatim}
+git clone --branch stable https://github.com/IRIS-Solutions-Team/IRIS-Toolbox.git /path/to/iris
+\end{verbatim}
+\begin{itemize}
+\setlength{\itemsep}{-1ex}
+   \item{\begin{flushleft} For the bleeding-edge branch: \end{flushleft}}
+\end{itemize}
+
+\begin{verbatim}
+git clone --branch bleeding https://github.com/IRIS-Solutions-Team/IRIS-Toolbox.git /path/to/iris
+\end{verbatim}
+\begin{itemize}
+\setlength{\itemsep}{-1ex}
+   \item{\begin{flushleft} Alternatively, download the ZIP file from the GitHub repository: \end{flushleft}}
+   \item{\begin{flushleft} \href{https://github.com/IRIS-Solutions-Team/IRIS-Toolbox}{IRIS Toolbox on GitHub} \end{flushleft}}
+\end{itemize}
+
+\matlabheadingtwo{\textbf{Set Up IRIS in MATLAB:}}
+
+\begin{itemize}
+\setlength{\itemsep}{-1ex}
+   \item{\begin{flushleft} Open MATLAB. \end{flushleft}}
+   \item{\begin{flushleft} Navigate to the directory where you downloaded or cloned the IRIS Toolbox. \end{flushleft}}
+   \item{\begin{flushleft} Add the IRIS Toolbox to your MATLAB path: \end{flushleft}}
+   \item{\begin{flushleft} In MATLAB, go to the "Home" tab and click on "Set Path." \end{flushleft}}
+   \item{\begin{flushleft} Click "Add with Subfolders," select the IRIS Toolbox directory, and click "Save." \end{flushleft}}
+   \item{\begin{flushleft} Run the startup file to initialize IRIS:\texttt{matlab}Copiar código\texttt{irisstartup} \end{flushleft}}
+\end{itemize}
+
+\matlabheadingtwo{\textbf{Verify Installation:}}
+
+\begin{itemize}
+\setlength{\itemsep}{-1ex}
+   \item{\begin{flushleft} To confirm that IRIS is installed correctly, execute:\texttt{matlab}Copiar código\texttt{irisping} \end{flushleft}}
+\end{itemize}
+
+\begin{itemize}
+\setlength{\itemsep}{-1ex}
+   \item{\begin{flushleft} If the installation is successful, MATLAB will display a confirmation message. \end{flushleft}}
+\end{itemize}
+
+\matlabheading{\textbf{Getting Started with IRIS:}}
+
+\begin{itemize}
+\setlength{\itemsep}{-1ex}
+   \item{\begin{flushleft} \textbf{Documentation and Tutorials:} \end{flushleft}}
+   \item{\begin{flushleft} Refer to the official IRIS documentation for comprehensive guides and tutorials: \end{flushleft}}
+   \item{\begin{flushleft} \href{https://iris.igpmn.org/docs/tutorials/}{IRIS Macroeconomic Modelling Toolbox - Tutorial} \end{flushleft}}
+   \item{\begin{flushleft} \textbf{Learning Resources:} \end{flushleft}}
+   \item{\begin{flushleft} Explore the "Five-Minute Intro" and "Features Overview" sections to familiarize yourself with the toolbox's capabilities. \end{flushleft}}
+   \item{\begin{flushleft} \textbf{Community and Support:} \end{flushleft}}
+   \item{\begin{flushleft} Engage with the IRIS community for support and collaboration: \end{flushleft}}
+   \item{\begin{flushleft} \href{https://github.com/IRIS-Solutions-Team/IRIS-Toolbox}{IRIS Toolbox GitHub Repository} \end{flushleft}}
+\end{itemize}
+
+\begin{par}
+\begin{flushleft}
+By following these steps, you can install and begin utilizing the IRIS Toolbox for advanced macroeconomic modeling and forecasting in MATLAB.
+\end{flushleft}
+\end{par}
+
+\matlabheading{Monetary Policy Analysis and Forecasting (MOOC)}
+
+\begin{par}
+\begin{flushleft}
+Learn about the macroeconomic motivation of the quarterly projection model (QPM), its key properties, model calibration, data filtration, and how to implement the QPM in MATLAB software in order to learn and understand practical model building and model operation as it is usually done in central banks.
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+\href{https://www.edx.org/learn/finance/the-international-monetary-fund-monetary-policy-analysis-and-forecasting}{EdX IMFx}
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+The course covers two main technical aspects:
+\end{flushleft}
+\end{par}
+
+\begin{itemize}
+\setlength{\itemsep}{-1ex}
+   \item{\begin{flushleft} introduction to a canonical New Keynesian model structure and its key properties; and \end{flushleft}}
+   \item{\begin{flushleft} implementation of the QPM in Matlab/Octave and the application of IRIS toolbox for solving and maintaining the QPM. \end{flushleft}}
+\end{itemize}
+
+\end{document}
